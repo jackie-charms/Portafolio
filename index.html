@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JACHARSER</title>
+  <meta name="description" content="Portafolio de Jacqueline Charles una Desarrolladora de Software">
+  <meta name="keywords" content="Portafolio, estudiante, desarrollo de software, tecnologia">
+  <meta name="author" content="Jacqueline Charles Serna">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="./index.css">
+
+  <!--JavaScript-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./index.js">
+
+  <!--Fav Icon-->
+  <link rel="shortcut icon" href="img/logos/credencial.svg">
+</head>
+<body>
+  <!--Sección de inicio-->
+  <section id="inicio">
+    <div class="contenido">
+      <header>
+        <div class="contenido-header">
+          <img class="huella" src="./img/logos/logo.svg" alt="huella">
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <ul id="links">
+              <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio</a></li>
+              <li><a href="#sobremi" onclick="seleccionar(this)">Sobre mí</a></li>
+              <li><a href="#experiencia" onclick="seleccionar(this)">Experiencia</a></li>
+              <li><a href="#portfolio" onclick="seleccionar(this)">Proyectos</a></li>
+              <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+            </ul>
+          </nav>
+
+          <!--Iconos del menu-->
+          <div class="icono-nav" onclick="responsiveMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <!--Iconos de redes sociales-->
+          <div class="redes">
+            <a href="https://api.whatsapp.com/send?phone=5549699979" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://twitter.com/tulips4Keigo"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/jackie_charms/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </header>
+      <div class="presentacion">
+        <p class="bienvenida">Bienvenidos</p>
+        <h2>Soy  <span>Jacqueline Charles</span>  Software Engineer</h2>
+        <p class="descripcion">
+          Como una Ingeniera de Software altamente motivada y dedicada, con una sólida información
+          académica y experiencia práctica en el campo de la informática.
+        </p>
+        <a href="#portfolio">Ir al Portafolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Sección "sobre mí"-->
+  <section id="sobremi">
+    <div class="contenedor-foto">
+      <img class="foto" src="./img/foto.webp" alt="fotodejackie">
+    </div>
+    <div class="sobremi">
+      <p class="titulo-seccion">Sobre Mí</p>
+      <h2>Hola, mi nombre es <span> Jacqueline Charles</span></h2>
+      <h3>Lic. en Tecnologías de la Información en los Negocios</h3>
+      <p>
+        Ingeniera de Software con sólidos conocimientos en
+        programación y desarrollo de software. Experiencia en diseño web,
+        bases de datos y sistemas operativos. Apasionada por la innovación
+        tecnológica y comprometida con la excelencia en el trabajo.
+      </p>
+      <a href="./img/CV JACHARSER.pdf">Descargar CV</a>
+    </div>
+  </section>
+
+  <!--Sección "Experiencia"-->
+  <section id="experiencia">
+    <h3 class="titulo-seccion">MI EXPERIENCIA</h3>
+    <div class="fila">
+        <div class="experiencia">
+            <span class="icono"><i class="fa-solid fa-code fa-bounce"></i></span>
+            <h4>Desarrolladora de Software</h4>
+            <hr>
+            <ul class="experiencia-tag">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Data Base</li>
+            </ul>
+            <p>
+              Desarrollé y mantuve aplicaciones web utilizando tecnologías
+              como HTML, CSS, JavaScript y Base de Datos.
+            </p>
+        </div>
+        <div class="experiencia">
+            <span class="icono"><i class="fa-solid fa-cart-shopping fa-bounce"></i></span>
+            <h4>Sitio Web de E-commerce</h4>
+            <hr>
+            <ul class="experiencia-tag">
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Bootstrap</li>
+            </ul>
+            <p>
+              Implementé características como la gestión de usuarios,
+              carrito de compras y pagos en línea.
+            </p>
+        </div>
+        <div class="experiencia">
+          <span class="icono"><i class="fa-solid fa-mobile-button fa-bounce"></i></span>
+          <h4>Aplicaciones Móviles</h4>
+          <hr>
+          <ul class="experiencia-tag">
+              <li>Android</li>
+              <li>iOS</li>
+              <li>Windows</li>
+          </ul>
+          <p>
+            Diseñé una interfaz fácil de usar y atractiva para los
+            usuarios. Utilicé iconos claros y una navegación sencilla
+            para que los empleadores puedan encontrar fácilmente la
+            información que están buscando.
+          </p>
+        </div>
+    </div>
+    <div class="fila">
+      <div class="experiencia">
+        <span class="icono"><i class="fa-solid fa-brain fa-flip"></i></span>
+        <h4>Inteligencia Artificial</h4>
+        <hr>
+        <ul class="experiencia-tag">
+            <li>Python</li>
+            <li>C++</li>
+            <li>Java</li>
+        </ul>
+        <p>
+          Tengo la habilidad para trabajar con redes neuronales profundas
+          y desarrollar modelos complejos para tareas como reconocimiento
+          de imágenes, procesamiento de lenguaje natural, etc.
+        </p>
+      </div>
+      <div class="experiencia">
+        <span class="icono"><i class="fa-solid fa-database fa-flip"></i></span>
+        <h4>Analista de Datos</h4>
+        <hr>
+        <ul class="experiencia-tag">
+            <li>Tableau</li>
+            <li>SQL</li>
+            <li>ETL</li>
+        </ul>
+        <p>
+          Tengo una sólida experiencia en el análisis profundo de conjuntos
+          de datos complejos para proporcionar insights valiosos y apoyar
+          la toma de decisiones informadas.
+        </p>
+      </div>
+      <div class="experiencia">
+        <span class="icono"><i class="fa-solid fa-wrench fa-flip"></i></span>
+        <h4>Soporte Técnico</h4>
+        <hr>
+        <ul class="experiencia-tag">
+            <li>Web</li>
+            <li>Graphic</li>
+            <li>SEO</li>
+        </ul>
+        <p>
+          Soy una profesional de soporte técnico altamente capacitada y
+          orientada al cliente, proporcione soluciones técnicas efectivas
+          y servicios de atención al cliente excepcionales.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--Sección "Habilidades"-->
+  <div class="contenedor-skills" id="skills">
+    <h3>HABILIDADES </h3>
+    <div class="skill">
+        <div class="info">
+            <p> <span class="lista"> </span>Html & Css</p>
+            <span class="porcentaje">98%</span>
+        </div>
+
+        <div class="barra">
+            <div class="" id="html"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="info">
+            <p> <span class="lista"> </span>Javascript</p>
+            <span class="porcentaje">10%</span>
+        </div>
+
+        <div class="barra">
+            <div class="" id="js"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="info">
+            <p> <span class="lista"> </span>SQL</p>
+            <span class="porcentaje">50%</span>
+        </div>
+
+        <div class="barra">
+            <div class="" id="bd"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="info">
+            <p> <span class="lista"> </span>Tableau</p>
+            <span class="porcentaje">5%</span>
+        </div>
+
+        <div class="barra">
+            <div class="" id="ps"></div>
+        </div>
+    </div>
+</div>
+
+  <!--Sección "Proyectos"-->
+  <section id="portfolio">
+    <h3 class="titulo-seccion">Mis Proyectos</h3>
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/Proyecto1.webp" target="_blank" alt="CRMparaclientes">
+            <div class="info">
+                <h4>
+                  CRM: Sistema para el control de clientes
+                </h4>
+                <p>
+                  Implementé y gestioné un sistema CRM personalizado
+                  para clientes.
+                </p>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto2.webp" target="_blank" alt="CRMdemarketing">
+            <div class="info">
+                <h4>ERP de Marketing y Finanzas</h4>
+                <p>Integré el ERP con plataformas
+                  de marketing digital
+                </p>
+            </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/proyecto3.webp" target="_blank" alt="menucfe">
+          <div class="info">
+              <h4>Diseño de Portal para CFE</h4>
+              <p>
+                Creé diseños visuales coherentes y
+                atractivos que reflejaban la identidad
+                de la empresa.
+              </p>
+          </div>
+        </div>
+    </div>
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto4.webp" target="_blank" alt="aplicacionandroid">
+            <div class="info">
+                <h4>Desarrollo de aplicación Android</h4>
+                <p>
+                  Diseñé una interfaz de usuario intuitiva y atractiva
+                  utilizando tecnologías modernas de desarrollo de
+                  Android.
+                </p>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto5.webp" target="_blank" alt="clasificaciondeimagenes">
+            <div class="info">
+                <h4>Clasificación de Imágenes con Fashion.mnist</h4>
+                <p>
+                  Desarrollé y entrené modelos de aprendizaje profundo
+                  utilizando la biblioteca TensorFlow en Google Colaboratory
+                  para el conjunto de datos Fashion MNIST.
+                </p>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="img/proyecto6.webp" target="_blank" alt="bocetodetiendaonline">
+            <div class="info">
+                <h4>Especialista en E-commerce</h4>
+                <p>
+                  Coordiné la selección y presentación de productos,
+                  asegurando que las imágenes y descripciones fueran
+                  atractivas y precisas.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Sección "Contacto"-->
+<section id="contacto">
+  <h3 class="titulo-seccion">Contacto</h3>
+  <div class="contenedor-form">
+      <form action="">
+          <div class="fila mitad">
+              <input type="text" placeholder="Nombre *" class="input-mitad">
+              <input type="email" placeholder="Email" class="input-mitad">
+          </div>
+          <div class="fila">
+              <input type="text" placeholder="Asunto" class="input-full">
+          </div>
+          <div class="fila">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje de contacto" class="input-full"></textarea>
+          </div>
+
+          <input type="submit" value="Enviar E-mail" class="btn-enviar">
+      </form>
+  </div>
+</section>
+
+<!--Sección "Footer"-->
+<footer>
+  <p>Todos los derechos reservados - 2023</p>
+  <div class="redes">
+    <a href="https://api.whatsapp.com/send?phone=5549699979" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="tel:+525549699979"><i class="fa-solid fa-phone"></i></a>
+    <a href="#contacto"><i class="fa-solid fa-envelope"></i></a>
+  </div>
+
+</footer>
+
+<!--Scripts-->
+<script src="index.js"></script>
+<script src="./JS/jquery-3.7.0.min.js"></script>
+<script src="./JS/bootstrap.min.js"></script>
+<script src="./JS/myscript.js"></script>
+</body>
+</html>
